@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .form-group{
+        background-color: rgb(230, 130, 0);
+        height: 40px;
+        width: 120px;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    .form-content{
+        outline: none;
+        height: 100%;
+        padding: 0 14px;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        border: 1px solid #a3a2a2;
+    }
+
+    .form-label{
+        color: #a3a2a2;
+        font-size: 12px;
+        position: absolute;
+        left: 13px;
+        top: 13px;
+        transition: 0.4s;
+    }
+
+    .form-content:focus+ .form-label{
+       background-color: white;
+        top: -7px;
+    }
+    .form-content:focus{
+        border: 1px solid #a3a2a2;
+    }
+    .form-content:not(:focus):valid+ .form-label{
+        top: -7px;
+        background-color: white;
+    }
+</style>
+<body>
+    <div class="form-group">
+        <input type="text" class="form-content" required>
+        <label for="" class="form-label">Email or username</label>
+    </div>
+</body>
+</html>

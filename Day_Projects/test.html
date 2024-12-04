@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+    }
+    #div2{
+        display: grid;
+        gap: 30px;
+    }
+</style>
+<body>
+    <header style="background-color: rgb(161, 203, 240);"><h1 style="text-align: center;">Welcome</h1></header>
+    <div class="container">
+        <div style="width: 290px; height: 360px; background-color: turquoise; padding: 130px; margin: 40px;">
+            aside
+        </div>
+        <div style="width: 290px; height: 360px; background-color: turquoise; padding: 130px; margin: 40px;" id="div2">
+            main
+            <div class="section" style="width: 100px; height: 30px; padding: 10px; background-color: goldenrod;">Section</div>
+            <div class="section" style="width: 100px; height: 30px; padding: 10px; background-color: goldenrod;">Section</div>
+        </div>
+    </div>
+    <footer style="position: fixed; bottom: 0; height: 60px; width: 100vw; background-color: orange; font-size: 45px; text-align: center; line-height: 4.5rem;">Thanks ...</footer>
+</body>
+</html>
